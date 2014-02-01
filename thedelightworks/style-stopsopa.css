@@ -1,0 +1,432 @@
+/* 
+	Name: Delightworks
+	Description: Delightworks custom theme!
+	Author: Chris Anthony
+	Date Created: 5/25/2011
+	Date Modified: 5/25/2011
+	Notes: Based on Delight Specialist by me!
+*/
+
+@font-face { font-family: Fontin; src: url('fonts/Fontin/Fontin_Sans_R_45b.otf'); }
+@font-face { font-family: Fontin; font-weight: bold; src: url('fonts/Fontin/Fontin_Sans_B_45b.otf'); }
+@font-face { font-family: Fontin; font-style: italic; src: url('fonts/Fontin/Fontin_Sans_I_45b.otf'); }
+@font-face { font-family: Fontin; font-weight: bold; font-style: italic; src: url('fonts/Fontin/Fontin_Sans_BI_45b.otf'); }
+@font-face { font-family: Fontin; font-variant: small-caps; src: url('fonts/Fontin/Fontin_Sans_SC_45b.otf'); }
+@font-face { font-family: Fertigo; src: url('fonts/Fertigo_PRO.otf'); }
+@font-face { font-family: Jura; src: url('fonts/Jura/Jura-Regular.ttf'); }
+@font-face { font-family: Jura; font-weight: bold; src: url('fonts/Jura/Jura-Bold.ttf'); }
+@font-face { font-family: Jura; font-style: italic; src: url('fonts/Jura/Jura-Italic.ttf'); }
+@font-face { font-family: Jura; font-weight: bold; font-style: italic; src: url('fonts/Jura/Jura-BoldItalic.ttf'); }
+@font-face { font-family: Fanwood; src: url('fonts/Fanwood.otf'); }
+@font-face { font-family: Fanwood; font-style: italic; src: url('fonts/Fanwood-Italic.otf'); }
+@font-face { font-family: Playtime; src: url('fonts/playtime.ttf'); }
+@font-face { font-family: Honey; src: url('fonts/HoneyScript-Light.ttf'); }
+@font-face { font-family: Operating; src: url('fonts/Operating-Instructions.ttf'); }
+@font-face { font-family: Boycott; src: url('fonts/Boycott.ttf'); }
+
+html {
+	background: url(img/delightworks-bg-christmas.png) top left repeat-x #ffffff;
+}
+
+body {
+	font-size: 11pt;
+	font-family: Jura;
+	color: #004814;
+}
+
+h1, h2, h3, a.title, .postDate, .postComments, .museo, #topnav ul li a {
+	font-family: Honey;
+}
+
+#topnav, #sidebarright {
+	display: none;
+}
+
+#topnav ul li a {
+	font-size: 2em;
+	color: #3b94e3;
+}
+
+#topnav ul li a:hover {
+	color: #41d5fc;
+}
+
+.museo {
+	font-size: 1.8em;
+}
+
+a {
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0;
+}
+
+blockquote {
+	border: 2px #cccccc solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 1em; 
+	margin: 0.5em 3em 1em;
+}
+
+p {
+	padding: 0em 0em 1em 0em;
+}
+
+h1 {
+	font-size: 2.75em;
+	font-weight: bold;
+	color: #33cc33;
+	padding-top: 1.5em;
+	padding-bottom: 0.75em;
+}
+
+h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #33cc33;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 2.25em;
+	font-weight: bold;
+	color: #33cc33;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+}
+
+img {
+	border: 0;
+}
+
+.fullwidth {
+	width: 100%;
+	max-width: 200px;
+}
+
+strong {
+	font-weight: bold;
+	color: #33cc33;
+}
+
+a strong {
+	color: #ff0000;
+}
+em {
+	font-style: italic;
+	color: #33cc33;
+}
+a em {
+	color: #ff0000;
+}
+a.title {
+	color: #6633cc;
+	font-size: 2em;
+	line-height: 1.1em;
+}
+
+tt {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+textarea {
+	max-width: 100%;
+}
+
+#leftside {
+	position: fixed;
+	background-color: #e9fcff;
+	float: left;
+	clear: both;
+	width: 25%;
+	min-width: 100px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0px;
+}
+
+#logoImage {
+	max-width: 500px;
+	float: right;
+}
+
+#header {
+}
+
+#container {
+	position: relative;
+	float: none;
+	text-align: justify;
+	max-width: 1000px;
+	width: 95%; 
+	min-height: 100%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topnav {
+        position: relative;
+        float: left;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+		margin-bottom: 10px;
+        padding: 0.5em;
+		padding-top: 2em;
+		text-align: center;
+}
+
+#topnav ul {
+	margin-left: auto;
+	margin-right: auto;
+	clear: left;
+}
+
+#topnav ul li {
+	float: left;
+	vertical-align: center;
+	padding-right: 2em;
+}
+
+#main {
+	position: relative;
+	float: right;
+ 	background: #480000;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	padding-right: 1em;
+	border: 2px #ffffff dotted;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+
+}
+
+#navigation {
+	display: none;
+}
+
+#sidebarright {
+	position: relative;
+	float: right;
+	background-color: #480000;
+	width: 23%;
+	max-width: 350px;
+	margin-right: auto;
+	margin-left: 0;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	padding-bottom: 0.5em;
+	text-align: left;
+	border-left: 1px solid #ffffff;
+	border: 2px #ffffff dotted;
+	font-size: 1em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.hrule {
+	width: 300px;
+	max-width: 300px;
+	margin: 0px auto 5px auto;
+	padding: 0px;	
+	padding-bottom: 10px;
+}
+
+.post {
+	padding-bottom: 1em;
+	line-height: 1.5em;
+}
+
+.postHead {
+
+}
+
+.postTitleLeft {
+	font-size: 1.8em;
+	padding-bottom: 1em;
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #6633cc;
+}
+
+.postTitleRight {
+	font-size: 0.9em;
+	float: right;
+	clear: right;
+	padding: 0em 0.5em 0em 0.5em;
+	margin: 0em 0.5em 0em 0.5em;
+	border: 1px double #6633cc;
+	font-family: Verdana, Helvetica, sans-serif;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.postDate {
+	color: #a91508;
+	font-size: 1.5em;
+}
+
+.postComments {
+	font-size: 1.5em;
+}
+
+.postTitleRight p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.post ul, .post ol {
+	padding: 1em 0em 1em 1em;
+}
+
+.post ul li, .post ol li{
+	padding: 0.25em 0em 0.25em 0em;
+	font-size: 1em;
+}
+
+.post ul li {
+	list-style: disc;
+}
+
+.post ol {
+	list-style: decimal inside;
+}
+
+.post ol li {
+	list-style: decimal inside;
+}
+
+.widget {
+	text-align: left;
+}
+
+.widgettitle {
+	font-size: 2em;
+	padding-bottom: 0.25em;
+}
+
+.widgetdivider {
+	background: url(img/sidebarwings.png) transparent center no-repeat;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+}
+.sidebar a {
+	font-weight: bold;
+}
+
+.sidebar ul li {
+	padding: 0.5em 0em 0.25em 0em;
+}
+
+.sidebar ul li ul {
+	padding-left: 1em;
+}
+
+.sidebar ul li ul li {
+	padding: 0em;
+	background: none;
+}
+
+.sidebarfoot {
+	padding: 0.5em 0em 0em 0em;
+	font-size: 0.9em;
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.sb-leftalign {
+	text-align: left;
+}
+
+.postnavigation, .postnavigation a {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.nonlink {
+	color: inherit; 
+	font-weight: inherit; 
+	text-decoration: none;
+}
+
+a.nonlink:hover {
+	text-decoration: underline;
+}
+
+.pkgs {
+	width: 95%;
+	text-align: center;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.dcpkg {
+	width: 19%;
+	float: left;
+	margin: 0em 0.1em;
+	min-height: 66px;
+}
+
+img.sb125 {
+	max-width: 125px;
+}
+img.sb200 {
+	max-width: 200px;
+}
+ol.commentlist, ol.commentlist li {
+	list-style-type:none;
+	margin: 0;
+}
+
+* { display: none; }
+
+html,body { 
+	display: block;
+	background-color: black;
+	background-image: none;
+}
+
+div#stopsopa {
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50px;
+	max-width: 400px;
+	font-family: Jura;
+	font-size: 16pt;
+	color: white;
+}
+
+div#stopsopa strong, div#stopsopa br {
+	display: inline;
+	color: white;
+}
+
+div#stopsopa a {
+	display: inline;
+	color: blue;
+}
+
+div#stopsopa h2 {
+	display: block;
+	font-family: Honey;
+	font-size: 2.5em;
+	color: white;
+}
